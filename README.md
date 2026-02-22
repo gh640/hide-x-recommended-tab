@@ -8,7 +8,6 @@ If "For you" is selected, it automatically switches to "Following".
 - `manifest.json`: Chrome extension configuration (Manifest V3)
 - `content.js`: Tab detection and hide logic
 - `icons/`: Active extension icon set (`icon16/icon32/icon48/icon128`) and source SVG
-- `samples/1.html`: Provided HTML sample of X
 
 ## Icon
 
