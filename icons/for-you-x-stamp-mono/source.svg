@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="#0f172a"/>
+  <rect x="16" y="24" width="96" height="80" rx="16" fill="#e5e7eb"/>
+  <text x="64" y="68" text-anchor="middle" font-size="22" font-weight="700" font-family="Arial, Helvetica, sans-serif" fill="#111827">For You</text>
+
+  <circle cx="64" cy="66" r="30" fill="none" stroke="#dc2626" stroke-width="8"/>
+  <path d="M47 49L81 83M81 49L47 83" stroke="#dc2626" stroke-width="8" stroke-linecap="round"/>
+</svg>

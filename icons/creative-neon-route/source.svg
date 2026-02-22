@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#312e81"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#bg)"/>
+
+  <rect x="14" y="18" width="48" height="20" rx="10" fill="#ef4444"/>
+  <rect x="66" y="18" width="48" height="20" rx="10" fill="#22c55e"/>
+
+  <circle cx="30" cy="72" r="14" fill="none" stroke="#fb7185" stroke-width="6" filter="url(#glow)"/>
+  <path d="M23 72h14" stroke="#fb7185" stroke-width="6" stroke-linecap="round" filter="url(#glow)"/>
+
+  <path d="M48 72h30" stroke="#22d3ee" stroke-width="8" stroke-linecap="round" filter="url(#glow)"/>
+  <path d="M72 62l14 10-14 10" fill="none" stroke="#22d3ee" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+
+  <circle cx="98" cy="72" r="16" fill="none" stroke="#4ade80" stroke-width="6" filter="url(#glow)"/>
+  <path d="M91 72l5 5 10-10" fill="none" stroke="#4ade80" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+
+  <rect x="20" y="92" width="88" height="16" rx="8" fill="#0b1220"/>
+  <path d="M28 100h32" stroke="#fb7185" stroke-width="4" stroke-linecap="round"/>
+  <path d="M68 100h32" stroke="#4ade80" stroke-width="4" stroke-linecap="round"/>
+</svg>
