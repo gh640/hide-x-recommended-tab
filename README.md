@@ -7,7 +7,14 @@ If "For you" is selected, it automatically switches to "Following".
 
 - `manifest.json`: Chrome extension configuration (Manifest V3)
 - `content.js`: Tab detection and hide logic
+- `icons/`: Active extension icon set (`icon16/icon32/icon48/icon128`) and source SVG
 - `samples/1.html`: Provided HTML sample of X
+
+## Icon
+
+Current default icon files: `icons/icon16.png`, `icons/icon32.png`, `icons/icon48.png`, `icons/icon128.png`
+
+![Current extension icon](icons/icon128.png)
 
 ## Installation (Developer Mode)
 
