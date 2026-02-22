@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Hide X Recommended Tab",
   "version": "0.1.0",
-  "description": "X のホームタイムラインから「おすすめ」タブを非表示にし、「フォロー中」を使いやすくします。",
+  "description": "Hide the \"For you\" tab on X home timeline and make the \"Following\" tab easier to use.",
   "content_scripts": [
     {
       "matches": [

@@ -1,24 +1,24 @@
 # Hide X Recommended Tab
 
-X (Twitter) のホームタイムラインにある「おすすめ」タブを非表示にする Chrome 拡張です。  
-「おすすめ」が選択中のときは自動で「フォロー中」に切り替えます。
+This Chrome extension hides the "For you" tab on the X (Twitter) home timeline.  
+If "For you" is selected, it automatically switches to "Following".
 
-## ファイル構成
+## File Structure
 
-- `manifest.json`: Chrome 拡張の設定 (Manifest V3)
-- `content.js`: タブの判定と非表示処理
-- `samples/1.html`: 提供された X の HTML サンプル
+- `manifest.json`: Chrome extension configuration (Manifest V3)
+- `content.js`: Tab detection and hide logic
+- `samples/1.html`: Provided HTML sample of X
 
-## インストール方法（開発者モード）
+## Installation (Developer Mode)
 
-1. Chrome の拡張管理ページを開く: `chrome://extensions/`
-2. 右上の「デベロッパー モード」を ON
-3. 「パッケージ化されていない拡張機能を読み込む」を押す
-4. このディレクトリ（`manifest.json` がある場所）を選択
+1. Open Chrome extensions page: `chrome://extensions/`
+2. Turn on "Developer mode" in the top-right corner
+3. Click "Load unpacked"
+4. Select this directory (the one that contains `manifest.json`)
 
-## 動作仕様
+## Behavior
 
-- `https://x.com/*` と `https://twitter.com/*` で動作
-- タブ内テキストが `おすすめ` / `For you` の要素を非表示
-- タブ内テキストが `フォロー中` / `Following` の要素がある場合のみ適用
-- X の SPA 遷移や再描画に追従するため、DOM 変更を監視して再適用
+- Works on `https://x.com/*` and `https://twitter.com/*`
+- Hides tabs whose label includes `For you` (including localized variants)
+- Applies only when a `Following` tab (including localized variants) is also present
+- Watches DOM changes and reapplies on SPA navigation and rerenders
